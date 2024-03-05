@@ -2,14 +2,6 @@
 
 namespace Bridge
 {
-    public interface IOperatingSystem
-    {
-        string SystemName();
-    }
-
-
-
-
     class BasicProgram
     {
         protected IOperatingSystem _operatingSystem;
@@ -43,7 +35,11 @@ namespace Bridge
     }
 
 
-
+    public interface IOperatingSystem
+    {
+        string SystemName();
+    }
+    
     class WindowsOS : IOperatingSystem
     {
         public string SystemName()
