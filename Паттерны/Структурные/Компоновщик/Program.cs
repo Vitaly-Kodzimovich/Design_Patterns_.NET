@@ -27,8 +27,8 @@ namespace Composite
 
     class Product1 : Component
     {
-        static double price = 5.50;
-        static string name = "Product1";
+        private static double price = 5.50;
+        private static string name = "Product1";
 
         public override string NamesOperation()
         {
