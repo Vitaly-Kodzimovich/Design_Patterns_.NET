@@ -39,7 +39,7 @@ namespace Bridge
     {
         string SystemName();
     }
-    
+
     class WindowsOS : IOperatingSystem
     {
         public string SystemName()
@@ -86,7 +86,8 @@ namespace Bridge
             program1 = new BasicProgram(new WindowsOS());
             client.ClientCode(program1);
             
-            ExtendedProgram program2 = new ExtendedProgram(new LinuxOS());
+            ExtendedProgram program2;
+            program2 = new ExtendedProgram(new LinuxOS());
             client.ClientCode(program2);
 
             BasicProgram program3;
