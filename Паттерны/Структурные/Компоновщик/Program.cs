@@ -137,7 +137,8 @@ namespace Composite
     }
 
     class Client
-    {        public void ClientCode(Component product)
+    {        
+        public void ClientCode(Component product)
         {
             Console.WriteLine($"RESULT: {product.NamesOperation()}");
             Console.WriteLine($"RESULT: {product.PriceOperation()}$\n");
