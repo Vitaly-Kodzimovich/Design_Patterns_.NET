@@ -22,6 +22,7 @@ namespace Flyweight
                 latitude, longitude);
         }
     }
+
     class BrickHouse : House
     {
         public BrickHouse()
@@ -35,7 +36,6 @@ namespace Flyweight
                 latitude, longitude);
         }
     }
-
 
 
     class HouseFactory
@@ -55,7 +55,6 @@ namespace Flyweight
                 return null;
         }
     }
-
 
 
     static class OperationsWithHouses
